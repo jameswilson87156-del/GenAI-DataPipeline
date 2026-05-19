@@ -1,0 +1,30 @@
+# 绝对禁止提交本地大模型密钥配置文件
+data-service/src/main/resources/application-local.yml
+
+# Python 虚拟环境
+venv/
+
+# Maven / Java 构建产物
+target/
+**/target/
+.m2/
+
+# Node 依赖与构建缓存
+node_modules/
+dist/
+
+# Python 缓存
+__pycache__/
+*.pyc
+
+# IDE / 系统杂项
+.idea/
+.vscode/
+.DS_Store
+
+# 意外落进项目目录的本地磁盘缓存目录
+mven-repo/
+[A-Z]:*/
+
+# 本地临时 Git 备份目录
+.git.bak.*
