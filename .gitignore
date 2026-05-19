@@ -1,5 +1,8 @@
 # 绝对禁止提交本地大模型密钥配置文件
 data-service/src/main/resources/application-local.yml
+.env
+.env.local
+.env.*.local
 
 # Python 虚拟环境
 venv/

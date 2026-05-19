@@ -9,13 +9,13 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: ${SPRING_DATASOURCE_URL:jdbc:mysql://localhost:13306/genai_data_pipeline?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&useSSL=false&allowPublicKeyRetrieval=true}
-    username: ${SPRING_DATASOURCE_USERNAME:root}
-    password: ${SPRING_DATASOURCE_PASSWORD:123456}
+    username: ${SPRING_DATASOURCE_USERNAME:genai_user}
+    password: ${SPRING_DATASOURCE_PASSWORD:change-me}
   data:
     redis:
       host: ${SPRING_DATA_REDIS_HOST:localhost}
       port: ${SPRING_DATA_REDIS_PORT:16379}
-      password: ${SPRING_DATA_REDIS_PASSWORD:123456}
+      password: ${SPRING_DATA_REDIS_PASSWORD:change-me}
       database: 0
       timeout: 3s
   cloud:

@@ -1,0 +1,16 @@
+genai:
+  pipeline:
+    python-worker:
+      base-url: ${GENAI_PYTHON_WORKER_BASE_URL:http://localhost:8000}
+      connect-timeout-millis: 2000
+      read-timeout-millis: 5000
+
+langchain4j:
+  open-ai:
+    chat-model:
+      base-url: ${LANGCHAIN4J_OPENAI_BASE_URL:}
+      api-key: ${LANGCHAIN4J_OPENAI_API_KEY:}
+      model-name: ${LANGCHAIN4J_OPENAI_MODEL_NAME:}
+      temperature: 0.1
+      log-requests: false
+      log-responses: false
